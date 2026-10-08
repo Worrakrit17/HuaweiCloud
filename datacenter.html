@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei Cloud Guide - Data Center Location</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huawei: { red: '#C7000B', redhover: '#A00008', navy: '#0B192C', dark: '#070F1B', slate: '#1E293B' }
+                    },
+                    fontFamily: { sans: ['Prompt', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+     <header class="bg-huawei-navy sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-white text-xl font-bold">
+                    <img src="images/huawei.svg" alt="Huawei Logo" class="w-7 h-7 object-contain brightness-0 invert" onerror="this.src='https://www.huaweicloud.com/favicon.ico'">
+                    <span>Huawei Cloud <span class="text-huawei-red">Guide</span></span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-2 text-xs font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Home</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Services</a>
+                    <a href="datacenter.html" class="bg-huawei-red text-white px-3 py-1.5 rounded-md font-semibold">Data Center</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pricing</a>
+                    <a href="pros-cons.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pros-Cons</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Certification</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Title Section -->
+    <section class="bg-huawei-navy text-white py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-huawei-red/20 text-huawei-red border border-huawei-red/30 text-xs px-3 py-1 rounded-full font-medium mb-3">
+                หมวดที่ 2
+            </span>
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">2. Data Center Location (สถานที่ตั้งศูนย์ข้อมูล)</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm mt-2">
+                โครงสร้างพื้นฐานระดับโลก และศูนย์ข้อมูลหลัก 3 Availability Zones (AZs) ในประเทศไทย
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+            <!-- 2.1 Global Structure -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">2.1</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">โครงสร้างพื้นที่ให้บริการสากล (Global Regions & AZs)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Huawei Cloud ให้บริการครอบคลุมในระดับสากล ผ่านการแบ่งโครงสร้างศูนย์ข้อมูลออกเป็น <b>Regions</b> (ภูมิภาค) และ <b>Availability Zones (AZs)</b> (เขตความพร้อมใช้งาน) ซึ่งเชื่อมต่อกันด้วยโครงข่ายไฟเบอร์ออพติกความเร็วสูง
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-700 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div>
+                        <b class="text-huawei-navy font-semibold">• Region (ภูมิภาค):</b> ที่ตั้งทางภูมิศาสตร์ของกลุ่มศูนย์ข้อมูล เช่น Bangkok (ap-southeast-1), Singapore, Hong Kong, Johannesburg และ Frankfurt
+                    </div>
+                    <div>
+                        <b class="text-huawei-navy font-semibold">• Availability Zone (AZ):</b> ศูนย์ข้อมูลอิสระภายใน Region เดียวกันที่มีระบบไฟฟ้า ความเย็น และเครือข่ายแยกจากกันอย่างเด็ดขาด
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.2 Thailand Center -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">2.2</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ศูนย์ข้อมูลหลักในประเทศไทย (Bangkok Region: ap-southeast-1)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    Huawei Cloud เป็นหนึ่งในผู้ให้บริการคลาวด์ระดับโลกรายแรกๆ ที่เข้ามาลงทุนจัดตั้งศูนย์ข้อมูลในประเทศไทยอย่างเป็นทางการ โดยมีรหัส Region คือ <code class="bg-slate-100 text-huawei-red px-2 py-0.5 rounded font-mono text-xs">ap-southeast-1</code> เพื่อรองรับการเติบโตของเศรษฐกิจดิจิทัลและองค์กรทั้งภาครัฐและเอกชนในไทย
+                </p>
+            </div>
+
+            <!-- 2.3 3 AZs Availability -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">2.3</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ความพร้อมใช้งานในไทย (3 Availability Zones - 3 AZs)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                    การมีศูนย์ข้อมูลถึง <b>3 AZs</b> ภายในประเทศไทย ช่วยให้องค์กรสามารถออกแบบสถาปัตยกรรมคลาวด์ที่มีความทนทานสูง (High Availability & Disaster Recovery):
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <div class="text-huawei-red font-bold text-sm mb-1">AZ1 (Bangkok)</div>
+                        <p class="text-xs text-slate-600">ศูนย์ข้อมูลแห่งแรก รองรับภาระงานประมวลผลและจัดเก็บข้อมูลหลัก</p>
+                    </div>
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <div class="text-huawei-red font-bold text-sm mb-1">AZ2 (Bangkok Area)</div>
+                        <p class="text-xs text-slate-600">ศูนย์ข้อมูลแห่งที่สอง ทำหน้าที่สำรองข้อมูลแบบ Real-time และกระจาย Traffic</p>
+                    </div>
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <div class="text-huawei-red font-bold text-sm mb-1">AZ3 (Bangkok Area)</div>
+                        <p class="text-xs text-slate-600">ศูนย์ข้อมูลแห่งที่สาม เพิ่มระดับความทนทานและทำ Active-Active Cross-AZ Deployment</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.4 Importance -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">2.4</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ความสำคัญของการมีศูนย์ข้อมูลภายในประเทศ</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-huawei-red flex items-center justify-center font-bold text-xs shrink-0">1</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-huawei-navy mb-1">Ultra-Low Latency (< 10ms)</h4>
+                            <p class="text-xs text-slate-600">
+                                การรับส่งข้อมูลภายในประเทศทำให้ได้ค่าความหน่วงต่ำมาก (ต่ำกว่า 10 มิลลิวินาที) เหมาะสำหรับแอปพลิเคชันที่ต้องการตอบสนองทันที เช่น ระบบการเงิน ธุรกรรมออนไลน์ เกม และ IoT
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-huawei-red flex items-center justify-center font-bold text-xs shrink-0">2</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-huawei-navy mb-1">Data Sovereignty & PDPA Compliance</h4>
+                            <p class="text-xs text-slate-600">
+                                ตอบโจทย์กฎหมายอธิปไตยทางข้อมูลและ พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) ของไทย ช่วยให้หน่วยงานราชการ สถาบันการเงิน และโรงพยาบาลจัดเก็บข้อมูลไว้ในประเทศได้อย่างถูกต้อง
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Navigation Footer -->
+            <div class="mt-8 flex justify-between items-center pt-6 border-t border-gray-200 text-xs font-semibold">
+                <a href="services.html" class="text-slate-600 hover:text-huawei-navy transition">&larr; ย้อนกลับ: 1. Services</a>
+                <a href="pricing.html" class="bg-huawei-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">ถัดไป: 3. Pricing Model &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Information -->
+    <footer class="bg-huawei-navy text-gray-400 text-xs py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-gray-300 font-medium">
+                วิชา 0904327 เทคโนโลยีการประมวลผลแบบคลาวด์ (Cloud Computing Technology)
+            </p>
+            <p class="text-gray-400">
+                จัดทำโดย: นางสาว พรหล้า ป้องคำ (66010916004) และ นาย วรกฤต พ่อหลอน (66010916047)<br>
+                สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม
+            </p>
+            <p class="text-gray-500 pt-3 border-t border-slate-800/60 max-w-xl mx-auto">
+                &copy; 2026 Huawei Cloud Guide Project. All Rights Reserved. Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

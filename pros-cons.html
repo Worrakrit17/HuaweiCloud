@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei Cloud Guide - ข้อดีและข้อเสีย</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huawei: { red: '#C7000B', redhover: '#A00008', navy: '#0B192C', dark: '#070F1B', slate: '#1E293B' }
+                    },
+                    fontFamily: { sans: ['Prompt', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation --><header class="bg-huawei-navy sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-white text-xl font-bold">
+                    <img src="images/huawei.svg" alt="Huawei Logo" class="w-7 h-7 object-contain brightness-0 invert" onerror="this.src='https://www.huaweicloud.com/favicon.ico'">
+                    <span>Huawei Cloud <span class="text-huawei-red">Guide</span></span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-2 text-xs font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Home</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Services</a>
+                    <a href="datacenter.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Data Center</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pricing</a>
+                    <a href="pros-cons.html" class="bg-huawei-red text-white px-3 py-1.5 rounded-md font-semibold">Pros-Cons</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Certification</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Title Section -->
+    <section class="bg-huawei-navy text-white py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-huawei-red/20 text-huawei-red border border-huawei-red/30 text-xs px-3 py-1 rounded-full font-medium mb-3">
+                หมวดที่ 4
+            </span>
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">4. ข้อดีและข้อเสีย (Pros and Cons)</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm mt-2">
+                วิเคราะห์จุดเด่นเชิงยุทธศาสตร์ ข้อได้เปรียบในประเทศไทย และข้อจำกัดที่ควรพิจารณา
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+            <!-- 4.1 Pros Section -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-emerald-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-md">4.1</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ข้อดีและจุดเด่นสำคัญ (Advantages & Strengths)</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Pro 1 -->
+                    <div class="flex gap-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">✓</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">มีศูนย์ข้อมูล Local ในไทยถึง 3 AZs</h3>
+                            <p class="text-xs text-slate-600">
+                                รองรับการทำ High Availability และ Disaster Recovery ภายในประเทศ โดยไม่ต้องส่งข้อมูลออกไปต่างประเทศ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pro 2 -->
+                    <div class="flex gap-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">✓</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">Ultra-Low Latency (< 10ms)</h3>
+                            <p class="text-xs text-slate-600">
+                                การรับส่งข้อมูลรวดเร็วสูง ความหน่วงต่ำมาก เหมาะสมอย่างยิ่งสำหรับแอปพลิเคชัน Real-time, Fintech และ IoT
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pro 3 -->
+                    <div class="flex gap-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">✓</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">ตอบโจทย์กฎหมาย PDPA & Data Sovereignty</h3>
+                            <p class="text-xs text-slate-600">
+                                ช่วยให้หน่วยงานภาครัฐ สถาบันการเงิน และโรงพยาบาลในไทยปฏิบัติตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคลได้อย่างสมบูรณ์
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pro 4 -->
+                    <div class="flex gap-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">✓</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">มีทีมงาน Local Support และภาษาไทย</h3>
+                            <p class="text-xs text-slate-600">
+                                มีวิศวกรและทีมงานผู้เชี่ยวชาญประจำในประเทศไทย คอยปรึกษา ติดตั้ง และแก้ไขปัญหาภาษาไทยได้ตลอด 24/7
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pro 5 -->
+                    <div class="flex gap-3 bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 md:col-span-2">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0">✓</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">ความเชี่ยวชาญด้าน 5G, AI และ Enterprise Hardware Integration</h3>
+                            <p class="text-xs text-slate-600">
+                                สามารถเชื่อมต่อคลาวด์ร่วมกับโครงข่าย 5G และฮาร์ดแวร์ประมวลผลประสิทธิภาพสูง เช่น ชิป Kunpeng และ Ascend AI ได้อย่างสมบูรณ์แบบ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4.2 Cons Section -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-rose-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-rose-100 text-rose-700 text-xs font-bold px-3 py-1 rounded-md">4.2</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ข้อเสียและข้อจำกัดที่ควรพิจารณา (Limitations & Considerations)</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Con 1 -->
+                    <div class="flex gap-3 bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                        <div class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-xs shrink-0">!</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">จำนวน Region ในฝั่งตะวันตกยังมีจำกัด</h3>
+                            <p class="text-xs text-slate-600">
+                                แม้จะมีศูนย์ข้อมูลหนาแน่นในเอเชียและแอฟริกา แต่ในอเมริกาเหนือและยุโรปยังมีจำนวน Region น้อยกว่าผู้ให้บริการฝั่งอเมริกา
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Con 2 -->
+                    <div class="flex gap-3 bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                        <div class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-xs shrink-0">!</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">Ecosystem และ Community มืออาชีพกำลังเติบโต</h3>
+                            <p class="text-xs text-slate-600">
+                                ชุมชนนักพัฒนา (Community) เอกสาร Open-source และ Third-party Tools ในตลาดยังมีปริมาณน้อยกว่าเมื่อเทียบกับ AWS หรือ Azure
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Con 3 -->
+                    <div class="flex gap-3 bg-rose-50/50 p-4 rounded-xl border border-rose-100 md:col-span-2">
+                        <div class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-xs shrink-0">!</div>
+                        <div>
+                            <h3 class="text-sm font-bold text-huawei-navy mb-1">ความซับซ้อนในการย้ายระบบเดิม (Migration Overhead)</h3>
+                            <p class="text-xs text-slate-600">
+                                สำหรับระบบที่พัฒนาบนเทคโนโลยีเฉพาะของผู้ให้บริการคลาวด์รายอื่น อาจต้องใช้เวลาในการปรับแต่งโครงสร้างสถาปัตยกรรมก่อนย้ายมายัง Huawei Cloud
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Navigation Footer -->
+            <div class="mt-8 flex justify-between items-center pt-6 border-t border-gray-200 text-xs font-semibold">
+                <a href="pricing.html" class="text-slate-600 hover:text-huawei-navy transition">&larr; ย้อนกลับ: 3. Pricing Model</a>
+                <a href="certifications.html" class="bg-huawei-red text-white px-4 py-2 rounded-lg hover:bg-huawei-redhover transition">ถัดไป: 5. Certification Path &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Information -->
+    <footer class="bg-huawei-navy text-gray-400 text-xs py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-gray-300 font-medium">
+                วิชา 0904327 เทคโนโลยีการประมวลผลแบบคลาวด์ (Cloud Computing Technology)
+            </p>
+            <p class="text-gray-400">
+                จัดทำโดย: นางสาว พรหล้า ป้องคำ (66010916004) และ นาย วรกฤต พ่อหลอน (66010916047)<br>
+                สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม
+            </p>
+            <p class="text-gray-500 pt-3 border-t border-slate-800/60 max-w-xl mx-auto">
+                &copy; 2026 Huawei Cloud Guide Project. All Rights Reserved. Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

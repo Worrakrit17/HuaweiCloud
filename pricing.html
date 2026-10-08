@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei Cloud Guide - Pricing Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huawei: { red: '#C7000B', redhover: '#A00008', navy: '#0B192C', dark: '#070F1B', slate: '#1E293B' }
+                    },
+                    fontFamily: { sans: ['Prompt', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+     <header class="bg-huawei-navy sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-white text-xl font-bold">
+                    <img src="images/huawei.svg" alt="Huawei Logo" class="w-7 h-7 object-contain brightness-0 invert" onerror="this.src='https://www.huaweicloud.com/favicon.ico'">
+                    <span>Huawei Cloud <span class="text-huawei-red">Guide</span></span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-2 text-xs font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Home</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Services</a>
+                    <a href="datacenter.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Data Center</a>
+                    <a href="pricing.html" class="bg-huawei-red text-white px-3 py-1.5 rounded-md font-semibold">Pricing</a>
+                    <a href="pros-cons.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pros-Cons</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Certification</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Title Section -->
+    <section class="bg-huawei-navy text-white py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-huawei-red/20 text-huawei-red border border-huawei-red/30 text-xs px-3 py-1 rounded-full font-medium mb-3">
+                หมวดที่ 3
+            </span>
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">3. Pricing Model (รูปแบบการคิดค่าบริการ)</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm mt-2">
+                เจาะลึกโครงสร้างราคา รูปแบบการจ่ายเงิน ปัจจัยคำนวณ และเครื่องมือประเมินค่าใช้จ่าย
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+            <!-- 3.1 Pay-As-You-Go -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.1</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">การจ่ายตามจริง (Pay-As-You-Go / Pay-per-use)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                    คิดค่าบริการตามปริมาณทรัพยากรที่เปิดใช้งานจริงเป็นรายชั่วโมง หรือรายวินาที (คำนวณแบบยืดหยุ่น)
+                </p>
+                <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <li><b>ความยืดหยุ่นสูง:</b> ไม่ต้องผูกสัญญาระยะยาว สามารถเปิด-ปิด หรือลบทรัพยากรเมื่อเลิกใช้งานได้ทันที</li>
+                    <li><b>เหมาะสำหรับ:</b> ระบบที่มีปริมาณการใช้งานไม่แน่นอน ระบบทดสอบ/พัฒนา (Dev/Test) หรือระบบที่มี Traffic แบบเป็นซีซัน</li>
+                </ul>
+            </div>
+
+            <!-- 3.2 Subscription -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.2</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">การสมัครสมาชิกรายเดือน/รายปี (Subscription / Yearly/Monthly)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                    การชำระเงินล่วงหน้าแบบผูกสัญญาคำนวณเป็นรายเดือนหรือรายปี (Reserved Instance Concept)
+                </p>
+                <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <li><b>ส่วนลดสูงสุด:</b> มอบส่วนลดราคาถูกกว่าการจ่าย Pay-As-You-Go อย่างมาก (ประหยัดได้สูงสุดถึง 40% - 70%)</li>
+                    <li><b>เหมาะสำหรับ:</b> ระบบหลักขององค์กร (Core Production) ที่เปิดรันต่อเนื่องตลอด 24/7 เช่น Database หรือ ERP</li>
+                </ul>
+            </div>
+
+            <!-- 3.3 Resource Packages -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.3</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">แพ็กเกจทรัพยากรล่วงหน้า (Resource Packages / Prepaid Bundles)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                    การซื้อโควตาปริมาณการใช้งานล่วงหน้าสำหรับบริการเฉพาะทาง เช่น โควตา Storage (OBS Capacity Package) หรือโควตา Bandwidth (Traffic Package)
+                </p>
+                <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <li><b>ควบคุมงบประมาณ:</b> ช่วยให้สามารถควบคุมงบประมาณค่าใช้จ่ายรายปีได้อย่างคงที่และชัดเจน</li>
+                    <li><b>ระบบตัดตามจริง:</b> เมื่อมีการใช้งาน ระบบจะหักลบโควตาจาก Package ก่อน หากเกินส่วนที่ซื้อไว้จึงจะคิดแบบ Pay-As-You-Go</li>
+                </ul>
+            </div>
+
+            <!-- 3.4 Free Tier / Free Trial -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.4</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ทดลองใช้งานฟรี (Free Tier / Free Trial)</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                    สิทธิพิเศษสำหรับผู้สมัครใช้งานใหม่และผู้พัฒนาเพื่อทดสอบระบบก่อนตัดสินใจลงทุน
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-600">
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <b class="text-huawei-navy font-semibold text-sm block mb-1">Free Credit & Package:</b>
+                        แจกเครดิตทดลองใช้งานฟรี หรือแพ็กเกจ ECS, OBS, RDS แบบจำกัดสเปกให้ทดลองใช้ฟรีสูงสุด 1-12 เดือน (ขึ้นอยู่กับโปรโมชัน)
+                    </div>
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <b class="text-huawei-navy font-semibold text-sm block mb-1">Always-Free Services:</b>
+                        บริการบางส่วนเปิดให้ใช้งานฟรีแบบมีโควตาประจำเดือน เช่น บริการจัดการสิทธิ์ IAM หรือโควตาฟรีของ FunctionGraph
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.5 Pricing Factors -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.5</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">ปัจจัยที่มีผลต่อการคำนวณราคา</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="font-bold text-huawei-red block mb-1">1. Compute Specification</span>
+                        จำนวน vCPU, ขนาด RAM, ประเภทสถาปัตยกรรม (x86 / ARM Kunpeng) และ GPU Acceleration
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="font-bold text-huawei-red block mb-1">2. Storage Type & Volume</span>
+                        ประเภทของดิสก์ (High I/O, Ultra-high I/O, SAS, SSD) และความจุ GB/TB ที่ถือครอง
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="font-bold text-huawei-red block mb-1">3. Network & Outbound Traffic</span>
+                        ขนาดความกว้าง Bandwidth (Mbps) และปริมาณข้อมูลที่รับส่งออกภายนอกระบบ (Data Transfer Out)
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <span class="font-bold text-huawei-red block mb-1">4. Region Selection</span>
+                        สถานที่ตั้งศูนย์ข้อมูลแต่ละ Region อาจมีอัตราค่าบริการและภาษีแตกต่างกันเล็กน้อย
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.6 Pricing Tools -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="bg-red-100 text-huawei-red text-xs font-bold px-3 py-1 rounded-md">3.6</span>
+                    <h2 class="text-lg sm:text-xl font-bold text-huawei-navy">เครื่องมือคำนวณและประเมินราคา</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-600">
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <b class="text-huawei-navy font-semibold text-sm block mb-1">Price Calculator (เครื่องมือประเมินราคาก่อนใช้งาน):</b>
+                        เครื่องมือเว็บแอปพลิเคชันจากหน้าเว็บหลัก ให้ผู้ใช้เลือกสเปก ECS, Storage, Network แล้วประเมินออกมาเป็นงบประมาณรายเดือน/รายปี
+                    </div>
+                    <div class="border border-slate-200 p-4 rounded-xl bg-slate-50">
+                        <b class="text-huawei-navy font-semibold text-sm block mb-1">Cost Center & Billing Console (ระบบติดตามหลังใช้งาน):</b>
+                        แดชบอร์ดสรุปค่าใช้จ่ายแบบ Real-time วิเคราะห์แนวโน้มการใช้งาน ตั้งแจ้งเตือนงบประมาณเกิน (Budget Alerts) และแยกค่าใช้จ่ายตามแผนก
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Navigation Footer -->
+            <div class="mt-8 flex justify-between items-center pt-6 border-t border-gray-200 text-xs font-semibold">
+                <a href="datacenter.html" class="text-slate-600 hover:text-huawei-navy transition">&larr; ย้อนกลับ: 2. Data Center Location</a>
+                <a href="pros-cons.html" class="bg-huawei-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">ถัดไป: 4. ข้อดีและข้อเสีย &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Information -->
+    <footer class="bg-huawei-navy text-gray-400 text-xs py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-gray-300 font-medium">
+                วิชา 0904327 เทคโนโลยีการประมวลผลแบบคลาวด์ (Cloud Computing Technology)
+            </p>
+            <p class="text-gray-400">
+                จัดทำโดย: นางสาว พรหล้า ป้องคำ (66010916004) และ นาย วรกฤต พ่อหลอน (66010916047)<br>
+                สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม
+            </p>
+            <p class="text-gray-500 pt-3 border-t border-slate-800/60 max-w-xl mx-auto">
+                &copy; 2026 Huawei Cloud Guide Project. All Rights Reserved. Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

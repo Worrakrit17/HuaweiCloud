@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei Cloud Guide - Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huawei: { red: '#C7000B', redhover: '#A00008', navy: '#0B192C', dark: '#070F1B', slate: '#1E293B' }
+                    },
+                    fontFamily: { sans: ['Prompt', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+     <header class="bg-huawei-navy sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-white text-xl font-bold">
+                    <img src="images/huawei.svg" alt="Huawei Logo" class="w-7 h-7 object-contain brightness-0 invert" onerror="this.src='https://www.huaweicloud.com/favicon.ico'">
+                    <span>Huawei Cloud <span class="text-huawei-red">Guide</span></span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-2 text-xs font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Home</a>
+                    <a href="services.html" class="bg-huawei-red text-white px-3 py-1.5 rounded-md font-semibold">Services</a>
+                    <a href="datacenter.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Data Center</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pricing</a>
+                    <a href="pros-cons.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pros-Cons</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Certification</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Title Section -->
+    <section class="bg-huawei-navy text-white py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-huawei-red/20 text-huawei-red border border-huawei-red/30 text-xs px-3 py-1 rounded-full font-medium mb-3">
+                หมวดที่ 1
+            </span>
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">1. Service การบริการหลักของ Huawei Cloud</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm mt-2">
+                เจาะลึก 11 หมวดหมู่บริการคลาวด์ครอบคลุมตั้งแต่ระดับโครงสร้างพื้นฐาน ฐานข้อมูล ปัญญาประดิษฐ์ ไปจนถึงความปลอดภัย
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content: 11 Sub-services -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- 1.1.1 IaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.1</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">IaaS: Infrastructure as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>Elastic Cloud Server (ECS):</b> บริการเครื่องเสมือน (Virtual Server on Demand) ปรับขนาด vCPU, RAM ได้ยืดหยุ่น[cite: 20]</li>
+                        <li><b>Bare Metal Server (BMS) / Flexus:</b> เซิร์ฟเวอร์กายภาพเฉพาะ ไร้ Hypervisor ประสิทธิภาพสูงสุดสำหรับงาน Mission-critical[cite: 20]</li>
+                        <li><b>Auto Scaling (AS):</b> ระบบปรับเพิ่ม/ลดจำนวน ECS อัตโนมัติตาม Traffic[cite: 20]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.2 CaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.2</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">CaaS: Container as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>Cloud Container Engine (CCE):</b> บริการบริหารจัดการ Kubernetes เกรดองค์กรแบบ Managed[cite: 20]</li>
+                        <li><b>Software Repository for Container (SWR):</b> คลังเก็บ Container Images ปลอดภัยสูง[cite: 20]</li>
+                        <li><b>Cloud Container Instance (CCI):</b> Serverless Container รันได้ทันทีไม่ต้องจัดการโหนด[cite: 20]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.3 PaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.3</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">PaaS: Platform as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>ServiceStage:</b> แพลตฟอร์มบริหาร Application Lifecycle รองรับ Microservices และ DevOps[cite: 20]</li>
+                        <li><b>AppCube:</b> แพลตฟอร์ม Low-Code เร่งการสร้างแอปพลิเคชันและ เวิร์กโฟลว์ธุรกิจ[cite: 20]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.4 FaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.4</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">FaaS: Function as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>FunctionGraph:</b> บริการประมวลผลแบบ Serverless ประมวลผลตาม เหตุการณ์ (Event-driven) คิดค่าบริการตามจริงเป็นมิลลิวินาที[cite: 21]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.5 DBaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.5</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">DBaaS: Database as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>RDS:</b> Managed Relational DB (MySQL, PostgreSQL, MS SQL)[cite: 21]</li>
+                        <li><b>GaussDB:</b> Enterprise Distributed DB ความปลอดภัย CC EAL4+[cite: 21]</li>
+                        <li><b>TaurusDB:</b> Cloud-native MySQL ความเร็วสูง[cite: 21]</li>
+                        <li><b>GeminiDB:</b> Managed Multi-model NoSQL (Cassandra, Mongo, Redis)[cite: 21]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.6 Security & Identity -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.6</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">Security & Identity</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>IAM:</b> บริหารจัดการสิทธิ์ ตัวตน และสิทธิ์การเข้าถึงทรัพยากร[cite: 21]</li>
+                        <li><b>WAF:</b> ป้องกันเว็บจากการโจมตี OWASP Top 10, SQL Injection, XSS[cite: 21]</li>
+                        <li><b>HSS:</b> ความปลอดภัยระดับโฮสต์ สแกนหาช่องโหว่และมัลแวร์[cite: 21]</li>
+                        <li><b>SecMaster:</b> ศูนย์ SOC อัจฉริยะวิเคราะห์ภัยคุกคามด้วย AI[cite: 21]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.7 IoT -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.7</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">Internet of Things (IoT)</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>IoTDA:</b> แพลตฟอร์มศูนย์กลางเชื่อมต่อและจัดการอุปกรณ์ IoT รองรับ MQTT, CoAP, HTTP[cite: 22]</li>
+                        <li><b>5G + Cloud Integration:</b> โซลูชันคลาวด์ร่วมกับ 5G เช่น Smart Healthcare (กรณีศึกษา รพ.ศิริราช)[cite: 22]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.8 STaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.8</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">STaaS: Storage as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>OBS:</b> Object Storage ทนทาน 99.999999999% สำหรับรูปภาพ วิดีโอ Static Web[cite: 22]</li>
+                        <li><b>EVS:</b> Block Storage ประสิทธิภาพสูง Latency ต่ำสำหรับ ECS/BMS[cite: 22]</li>
+                        <li><b>SFS:</b> Shared File Storage (NAS) ผ่าน NFS/CIFS[cite: 22]</li>
+                        <li><b>CBR:</b> บริการสำรองและกู้คืนข้อมูลอัตโนมัติ[cite: 22]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.9 Big Data & Analytics -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.9</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">Big Data & Analytics</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>DLI:</b> Serverless Big Data คิวรีด้วย Spark, Flink, SQL[cite: 22]</li>
+                        <li><b>DWS:</b> Enterprise Data Warehouse รองรับข้อมูลระดับ Petabyte[cite: 22]</li>
+                        <li><b>MRS:</b> Managed Big Data Platform (Hadoop, Spark, Hive)[cite: 22]</li>
+                        <li><b>DataArts Studio:</b> แพลตฟอร์มบริหาร Data Governance แบบครบวงจร[cite: 22]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.10 BCaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.10</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">BCaaS: Blockchain as a Service</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>Huawei Cloud Blockchain Service (BCS):</b> แพลตฟอร์มบล็อกเชนระดับองค์กร ปรับใช้เครือข่ายบล็อกเชนได้รวดเร็ว ปลอดภัย และรองรับธุรกรรมความเร็วสูง[cite: 23]</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1.11 LBaaS -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition md:col-span-2 lg:col-span-2">
+                    <span class="inline-block bg-red-100 text-huawei-red text-xs font-bold px-2.5 py-1 rounded-md mb-3">1.1.11</span>
+                    <h3 class="text-base font-bold text-huawei-navy mb-2">Load Balancer as a Service (LBaaS)</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside">
+                        <li><b>Elastic Load Balance (ELB):</b> บริการกระจายปริมาณการจราจรข้อมูล (Traffic) ไปยังเซิร์ฟเวอร์ปลายทางหลายเครื่องโดยอัตโนมัติ เพิ่มความพร้อมใช้งานสูง (High Availability) และความทนทานของระบบ ทั้งในระดับ Layer 4 (TCP/UDP) และ Layer 7 (HTTP/HTTPS)[cite: 23]</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Page Navigation Footer -->
+            <div class="mt-12 flex justify-between items-center pt-6 border-t border-gray-200 text-xs font-semibold">
+                <a href="index.html" class="text-slate-600 hover:text-huawei-navy transition">&larr; ย้อนกลับหน้าแรก</a>
+                <a href="datacenter.html" class="bg-huawei-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">ถัดไป: 2. Data Center Location &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Information -->
+    <footer class="bg-huawei-navy text-gray-400 text-xs py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-gray-300 font-medium">
+                วิชา 0904327 เทคโนโลยีการประมวลผลแบบคลาวด์ (Cloud Computing Technology)
+            </p>
+            <p class="text-gray-400">
+                จัดทำโดย: นางสาว พรหล้า ป้องคำ (66010916004) และ นาย วรกฤต พ่อหลอน (66010916047)<br>
+                สาขาวิชาธุรกิจดิจิทัลและระบบสารสนเทศ คณะการบัญชีและการจัดการ มหาวิทยาลัยมหาสารคาม
+            </p>
+            <p class="text-gray-500 pt-3 border-t border-slate-800/60 max-w-xl mx-auto">
+                &copy; 2026 Huawei Cloud Guide Project. All Rights Reserved. Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
