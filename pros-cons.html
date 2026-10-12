@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huawei Cloud Guide - Pros & Cons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        huawei: { red: '#C7000B', redhover: '#A00008', navy: '#0B192C', dark: '#070F1B', slate: '#1E293B' }
+                    },
+                    fontFamily: { sans: ['Prompt', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="bg-huawei-navy sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2.5 text-white text-xl font-bold">
+                    <img src="images/huawei.svg" alt="Huawei Logo" class="w-7 h-7 object-contain brightness-0 invert" onerror="this.src='https://www.huaweicloud.com/favicon.ico'">
+                    <span>Huawei Cloud <span class="text-huawei-red">Guide</span></span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-2 text-xs font-medium">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Home</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Services</a>
+                    <a href="datacenter.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Data Center</a>
+                    <a href="pricing.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Pricing</a>
+                    <a href="pros-cons.html" class="bg-huawei-red text-white px-3 py-1.5 rounded-md font-semibold">Pros-Cons</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-white px-3 py-1.5 transition">Certification</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-huawei-navy text-white py-12 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-huawei-red/20 text-huawei-red border border-huawei-red/30 text-xs px-3 py-1 rounded-full font-medium mb-3">หมวดที่ 4</span>
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">4. ข้อดีและข้อเสียของ Huawei Cloud (Pros & Cons)</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm mt-2">วิเคราะห์เปรียบเทียบจุดเด่นและข้อจำกัดในมุมมองการประยุกต์ใช้งานองค์กร</p>
+        </div>
+    </section>
+
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 4.1 ข้อดี -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-emerald-600 mb-4 border-b pb-2">4.1 ข้อดีของ Huawei Cloud</h2>
+                    <ul class="text-xs text-slate-600 space-y-3">
+                        <li><b>Data Center ท้องถิ่น 3 AZs:</b> ทำงานแบบ Active-Active และ Disaster Recovery รองรับ PDPA และ Data Residency สอดคล้องกฎหมายไทย</li>
+                        <li><b>Ultra-Low Latency (<10ms):</b> เชื่อมต่อตรงผ่าน Direct Peering กับ ISPs ไทย เหมาะกับ Real-time Workloads (Mobile Banking KBank/Krungsri, Flash Sale CP/Central, ศิริราช)</li>
+                        <li><b>Full-Stack AI & Everything as a Service:</b> นวัตกรรม AI ครบวงจร (ModelArts, Pangu Models) และ DB เกรดองค์กร (GaussDB CC EAL4+)</li>
+                        <li><b>Cost Efficiency & Transparency:</b> ไม่ไม่มีค่าธรรมเนียมแอบแฝง ค่า Data Egress/Bandwidth คุ้มค่าสูง ช่วยลด TCO รวม</li>
+                        <li><b>24/7 Local Thai Support:</b> มีทีมวิศวกรและสถาปนิกคลาวด์ชาวไทยดูแลตลอด 24 ชั่วโมง ไร้ปัญหาภาษาและการรอคิวตั๋วต่างประเทศ</li>
+                    </ul>
+                </div>
+
+                <!-- 4.2 ข้อเสีย -->
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-rose-600 mb-4 border-b pb-2">4.2 ข้อเสียและข้อจำกัด</h2>
+                    <ul class="text-xs text-slate-600 space-y-3">
+                        <li><b>Third-Party Integration Ecosystem:</b> โมดูลเชื่อมต่อซอฟต์แวร์ Open-source ภายนอกบางประเภทอาจน้อยกว่าเจ้าตลาดฝั่งตะวันตก งาน Legacy Systems อาจต้องเขียนสคริปต์/API เพิ่ม</li>
+                        <li><b>เอกสารทางเทคนิคเชิงลึกภาษาไทย:</b> แม้จะมีคู่มือภาษาไทยเบื้องต้น แต่เอกสารอ้างอิงเชิงลึก (In-depth Technical API References & Architecture Manuals) ส่วนใหญ่ยังเป็นภาษาอังกฤษ</li>
+                        <li><b>Community & Talent Pool:</b> ชุมชนนักพัฒนาและกระทู้ถาม-ตอบปัญหารายย่อยยังมีน้อยกว่า ต้องพึ่งพาเอกสารทางการ Huawei Talent Online หรือทีม Support เป็นหลัก</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="mt-8 flex justify-between items-center pt-6 border-t border-gray-200 text-xs font-semibold">
+                <a href="pricing.html" class="text-slate-600 hover:text-huawei-navy transition">&larr; ย้อนกลับ: 3. Pricing</a>
+                <a href="certifications.html" class="bg-huawei-navy text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition">ถัดไป: 5. Certification &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-huawei-navy text-gray-400 text-xs py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-gray-300 font-medium">วิชา 0904327 เทคโนโลยีการประมวลผลแบบคลาวด์ (Cloud Computing Technology)</p>
+            <p class="text-gray-500 pt-3 border-t border-slate-800/60 max-w-xl mx-auto">&copy; 2026 Huawei Cloud Guide Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
